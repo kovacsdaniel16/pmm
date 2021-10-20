@@ -1,0 +1,7 @@
+C:\Users\kovac\source\repos\ADC\bin\Debug\ADC.exe.config
+C:\Users\kovac\source\repos\ADC\bin\Debug\ADC.exe
+C:\Users\kovac\source\repos\ADC\bin\Debug\ADC.pdb
+C:\Users\kovac\source\repos\ADC\obj\Debug\ADC.csproj.AssemblyReference.cache
+C:\Users\kovac\source\repos\ADC\obj\Debug\ADC.csproj.CoreCompileInputs.cache
+C:\Users\kovac\source\repos\ADC\obj\Debug\ADC.exe
+C:\Users\kovac\source\repos\ADC\obj\Debug\ADC.pdb
