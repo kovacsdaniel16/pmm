@@ -105,7 +105,7 @@ namespace ADC
             return resolution;
         }
 
-        public void getQuanted() 
+        public void getQuanted() //az előzőleg megkapott d paraméterrel (resolution) elosztom a mért adatot és feltöltöm, a kvantált tömbbe
         {
             double sgd;
             resolution = getResolution();
@@ -115,10 +115,11 @@ namespace ADC
                 sgd = analog[i];
                 kvantalt[i] = sgd/resolution;
                 // Console.WriteLine(kvantalt[i]);
-                if (kvantalt[i]<0)
+              /*  if (kvantalt[i]<0)
                 {
                     kvantalt[i] *=-1;
                 }
+              */
             }
 
 
@@ -137,19 +138,20 @@ namespace ADC
 
                 binArray[i] = seged;
 
-                Console.Write("Bemeneti duplapontos érték: "+analog[i]+ " A kvantált érték: " + kvantalt[i] + " " + " bináris kódszó: "+" ");
+                Console.Write("<Bemeneti duplapontos érték: "+analog[i]+ ">\t"+"<A kvantált érték: " + Math.Round(kvantalt[i]) + ">\t" + "<Bináris kódszó: ");
 
                
 
                 if (binArray[i].Length<=hatvany)
                 {
-                    Console.Write(binArray[i]);
+                    Console.Write(binArray[i]+">");
                     Console.WriteLine();
                 }
 
+               
                 else
                 {
-                    Console.Write(binArray[i].Substring(0, hatvany));
+                    Console.Write(binArray[i].Substring(0, hatvany)+">");
                     Console.WriteLine();
                     
                 }
